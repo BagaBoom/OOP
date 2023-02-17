@@ -74,7 +74,6 @@ namespace Lab_14
     {
         public int Compare(object x , object y)
         {
-            //return new CaseInsensitiveComparer().Compare(((Four_Pointed_Star)x).Area_Star());
             return (new CaseInsensitiveComparer()).Compare(((Four_Pointed_Star)x).Area_Star(), ((Four_Pointed_Star)y).Area_Star());
         }
     }
