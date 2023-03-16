@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Lab_16
 {
     internal class Program
@@ -21,7 +20,6 @@ namespace Lab_16
         static double func1(double x) => 1/ Math.Pow(x, 1/3.0);
         static double func2(double x) => 1/ Math.Sqrt(Math.Pow(x,2));
         static double func3(double x) => Math.Cos(x);
-
         static double Trap(Func F, double a, double b, UInt16 pre = 50)
         {
             if (pre == 0) pre = 1;
@@ -30,9 +28,6 @@ namespace Lab_16
             for (double i = a + s; i < b; i += s) res += F(i);
             return Math.Round(Math.Abs(res * s),5);
         }
-
-
-
         static void handler(string text)
         {
             Console.WriteLine(text);
@@ -52,7 +47,6 @@ namespace Lab_16
                     if (symbol == 'С') KeyPress(name);
                 }
             }
-
         }
     }
 }
