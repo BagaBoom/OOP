@@ -28,10 +28,7 @@ namespace Lab_16
             for (double i = a + s; i < b; i += s) res += F(i);
             return Math.Round(Math.Abs(res * s),5);
         }
-        static void handler(string text)
-        {
-            Console.WriteLine(text);
-        }
+        static void handler(string text)Console.WriteLine(text);
         delegate void MyEvent(string text);
         class MEvent
         {
